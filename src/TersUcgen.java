@@ -8,12 +8,21 @@ public class TersUcgen {
         System.out.print("Satır Sayısınız giriniz: ");
         n = scan.nextInt();
       //Kullanıcıdan aldığı değer kadar döngüyü çalıştırdık.
-        for(int k=0; k<9; k++) {
-            for (int i=0; i <n; i++) {//Yıldızlar satırda kaçar kaçar basılsın.
+        for (int i = n; i>=1 ; i--) {
+
+            //Boşluklar
+            for (int j = 0; j < n - i; j++) {
+                System.out.print(" ");
+            }
+
+            // Yıldızlar
+            for (int k = 1; k <= 2 * i - 1; k++) {
                 System.out.print("*");
             }
-            System.out.println("");//Yıldızlarımız basıldıktan sonra alt satıra geçilmesini sağlıyoruz.
-            n--;//her seferinde yıldızımızın birer birer azalmasını sağladık
+
+
+            System.out.println();
+
         }
 
     }
