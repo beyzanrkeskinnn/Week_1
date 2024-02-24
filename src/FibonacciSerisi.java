@@ -7,6 +7,8 @@ public class FibonacciSerisi {
         System.out.print("Bir sayı giriniz : ");
         inp = scan.nextInt();
         System.out.println(inp + " Girdiğiniz sayının fibonacci serisi: ");
+
+        //Kullanıcıdan aldığın değer kadar artarak dön
         for (int i = 1; i <= inp; i++) {
             System.out.print(n1 + " ,");
             total = n1 + n2;
